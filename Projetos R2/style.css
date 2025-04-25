@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e2a2d;
+    color: #f0f0f0;
+}
+
+nav {
+    background-color: #1e2a2d;
+    padding: 15px 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centraliza os links de navegação */
+}
+
+nav a {
+    text-decoration: none;
+    color: #c89265;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.container {
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-texto {
+    flex: 1;
+    max-width: 600px;
+}
+
+h1, h2 {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.content-imagem {
+    text-align: center;
+    padding: 10px;
+}
+
+.content-imagem img {
+    width: 100%; /* Ajusta a imagem para 100% da largura do container */
+    max-width: 400px; /* Limita a largura da imagem */
+    height: auto;
+    border-radius: 8px; /* Adiciona borda arredondada */
+}
+
+.footer {
+    background-color: #a0663f;
+    color: #1e2a2d;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #c89265;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.button img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 150px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centraliza todo o conteúdo */
+    }
+
+    .content-texto {
+        max-width: 90%;
+    }
+
+    .content-imagem img {
+        max-width: 80%; /* Limita a largura da imagem em telas menores */
+    }
+
+    .button {
+        font-size: 1em; /* Ajusta o tamanho da fonte nos botões */
+    }
+}
